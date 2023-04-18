@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="arit.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="arit">
+
+     <!-- addition -->
+  <button onclick="add()"> add</button>
+
+  <p>= <span id="add"></span> </p>
+
+
+  <!-- rsubtraction -->
+
+   <button onclick="sub()">Minus</button> 
+
+   <p>= <span id="sub"></span></p>
+
+   <!-- multiplication -->
+
+   <button onclick="multi()">multiply</button> 
+
+   <p>=<span id="multi"></span></p>
+
+   <!-- division -->
+
+   <button onclick="divide()">divide</button> 
+
+   <p> = <span id="divide"></span></p>
+
+   <!-- percentage -->
+   <button onclick="percent()"> percentage</button> 
+
+   <p> = <span id="percent"></span></p>
+
+
+  </div>
+ 
+ 
+  
+
+
+
+
+ 
+
+
+
+  <script>
+    function add( ) {
+      let a=10
+      let b = 20
+      document.getElementById ("add").innerHTML= a + b
+
+  }
+
+  function sub () {let a = 30
+  let b =20
+  document.getElementById ("sub").innerHTML = a-b}
+
+  function multi () {let a = 2
+  let b =3
+  document.getElementById ("multi").innerHTML = a*b}
+    
+  function divide () {let a = 10
+  let b =2
+  document.getElementById ("divide").innerHTML = a/b}
+
+  function percent () {let a = 10
+  let b =2
+  document.getElementById ("percent").innerHTML = a%b}
+
+
+
+ 
+  </script>
+</body>
+</html>

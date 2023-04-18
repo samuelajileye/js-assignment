@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="ass2.css">
+</head>
+<body>
+
+  <div class="form">
+    <label for=""> Know your score</label>
+    <input type="text" id="score" name="">
+  
+
+  <button onclick="grade()"> check score</button>
+  <p id="result"></p>
+
+  </div>
+  
+
+    
+
+
+
+  <script>
+    function grade(){ 
+    let score,text;
+     score=document.getElementById("score").value;
+    
+    if (score>=70 && score<=100){
+      console.log("A")
+     // text= "Your Score is A"
+
+    }
+    else if (score>=60 && score<70){
+     // text="Your score is B"
+     console.log("B")
+    }
+    else if (score >=50 && score){
+      //text="Your score is C"
+      console.log("C")
+    }
+    else if (score >=45 && score<50){
+      //text="Your score is D"
+      console.log("D")
+    }
+    else if (score >=40 && score <45){
+     // text="Your score is E"
+     console.log("E")
+    }
+    else if (score >100 || score < 0){
+    //  text=" Invalid score"
+    console.log("Invalid score")
+    }
+    else{
+      // text="Your score is F"
+      console.log("F")
+    }
+
+  }
+   
+
+document.getElementById('result').innerHTML=text;
+  </script>
+</body>
+</html>
